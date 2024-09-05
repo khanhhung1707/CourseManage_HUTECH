@@ -1,0 +1,43 @@
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    margin: 50px auto;
+}
+
+.slice {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0px, 100px, 200px, 0px); /* Adjust clipping to create half-circle */
+    border-radius: 50%;
+    transform-origin: center center;
+}
+
+.half-slice {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0px, 100px, 200px, 0px);
+    border-radius: 50%;
+    transform-origin: center center;
+}
+
+.center {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
